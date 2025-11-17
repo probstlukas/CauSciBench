@@ -165,9 +165,9 @@ def main(args):
 
     # Determine the base path for datasets
     if args.data_type == 'qrdata':
-        base_path = str(data_root / 'all_data')
+        base_path = str(data_root / 'qrdata')
     elif args.data_type == 'real':
-        base_path = str(data_root / 'all_data')
+        base_path = str(data_root / 'real_data')
     elif args.data_type == 'synthetic':
         base_path = str(data_root / 'synthetic_data')
     else:

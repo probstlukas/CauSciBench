@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
     args = parse_arguments()
     try:
-        df = pd.read_csv(args.input_csv)
+        df = pd.read_csv(args.input_csv, encoding='latin-1')
         df["answer"] = df["answer"].astype(str).str.replace("−", "-")
     except FileNotFoundError:
         raise FileNotFoundError(f"Input CSV file {args.input_csv} not found.")
